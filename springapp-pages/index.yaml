@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  springapp:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-03-06T09:39:40.36044337-08:00"
+    description: A Helm chart for Kubernetes
+    digest: a8466737ed2e59273e9da32dc9c3ad52f13bcfc3f50d08dc418e33f4ba7ba10e
+    name: springapp
+    type: application
+    urls:
+    - https://github.com/Konoha-23/springapp-1.git/springapp-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-03-06T09:39:40.359610592-08:00"
