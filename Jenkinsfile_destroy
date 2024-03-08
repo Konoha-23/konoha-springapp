@@ -1,0 +1,14 @@
+pipeline{
+    agent { 
+        label 'kubernetes'
+  }
+    stages{
+        stage('Destroy Landmark.devopsnetwork.net'){
+            steps{
+                sh "echo 'Deploy Tesla To Cluster'"
+                sh "terraform init"
+                sh "terraform destroy --auto-approve" 
+            }
+        }
+    }
+}
