@@ -9,25 +9,6 @@ pipeline{
                 //sh "echo clone code complete"
                 //git 'https://github.com/Ohubabs/terra_mattermost.git'
             //}
-        //}
-        //stage('Create Namespace'){
-        //    steps{
-        //      sh "echo 'Create Namespace'"
-        //      sh "kubectl apply -f analytics-namespace.yml"   
-        //    }
-        //}
-        //stage('Create Secret'){
-        //    steps{
-        //      sh "echo 'Create Secret'"
-        //      sh "kubectl apply -f analytics-secret.yml"   
-        //    }
-        //}
-        //stage('Create Wordpress ClusterIssuer'){
-        //    steps{
-        //      sh "echo 'Create Cluster Issuer for Mattermost'"
-        //      sh "kubectl apply -f wordpress-issuer.yml"   
-        //    }
-        //}
         stage('Initialize Terraform Environment'){
             steps{
               sh "echo 'Initialize Terraform'"
