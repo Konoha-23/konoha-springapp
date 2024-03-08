@@ -29,7 +29,7 @@ pipeline{
         }
         stage('Deploy Landmark.devopsnetwork.net'){
             steps{
-              sh "echo 'Create Wordpress'"
+              sh "echo 'Deploy Landmark.devopsnetwork.net'"
               sh "terraform apply --auto-approve"   
             }
         }
